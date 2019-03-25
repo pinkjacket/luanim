@@ -9,7 +9,7 @@ function love.load()
   maxFrames = 5
   for i=0,1 do
     for j=0,2 do
-      table.insert(frames, love.graphics.newQuad(j * frame_width, i * frame_height, frame_width, frame_height, width, height))
+      table.insert(frames, love.graphics.newQuad(1 + j * (frame_width + 2), 1 + i * (frame_height + 2), frame_width, frame_height, width, height))
       if #frames == maxFrames then
         break
       end
